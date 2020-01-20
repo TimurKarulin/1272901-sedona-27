@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Тимур Карулин](https://up.htmlacademy.ru/htmlcss/27/user/1272901).
-* Наставник: [Андрей Грачев] (https://htmlacademy.ru/profile/id252055).
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
