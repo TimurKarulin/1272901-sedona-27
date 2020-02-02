@@ -17,7 +17,34 @@
           <li><a>Гостиницы</a></li>
         </ul>
       </nav>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <p>
+            Инфраструктура:<br>
+            <input type="checkbox" name="pool" id="pool">
+            <label for="pool">Бассейн</label><br>
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label><br>
+            <input type="checkbox" name="apartments" id="apartments">
+            <label for="apartments">Апартаменты</label>
+          </p>
+          <p>
+            Тип жилья:<br>
+            <input type="checkbox" name="hotel" id="hotel">
+            <label for="hotel">Гостиница</label><br>
+            <input type="checkbox" name="motel" id="motel">
+            <label for="motel">Парковка</label><br>
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">wi-fi</label>
+          </p>
+          <p>
+            Стоимость в сутки (р):<br>
+            <input type="text" name="min-value" placeholder="от 0">
+            <input type="text" name="max-value" placeholder="до 3000"><br>
+            <button type="button">min</button>
+            <button type="button">max</button><br>
+            <button type="submit">Показать</button>
+          </p>
+        </form>
         <div>
           <p>Найдено: 3</p>
           <p>Сортировка:</p>
@@ -33,7 +60,7 @@
         </div>
     </header>
     <main>
-      <h1>Подбор гостиницы</h1>
+      <h1 class="visually-hidden">Подбор гостиницы</h1>
         <ul>
           <li>
             <a href="#">
