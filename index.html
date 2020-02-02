@@ -71,7 +71,29 @@
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button">Поиск гостиницы в Седоне</button>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <p>
+            <label for="date-in">Дата заезда:</label>
+            <input type="text" id="date-in" name="date-in" placeholder="ДД.ММ.ГГГГ" required>
+          </p>
+          <p>
+            <label for="date-out">Дата выезда:</label>
+            <input type="text" id="date-out" name="date-out" placeholder="ДД.ММ.ГГГГ" required>
+          </p>
+          <p>
+            <label for="number-adult">Взрослые:</label>
+            <button type="button">-</button>
+            <input type="text" id="number-adult" name="number-adult" value="0" required>
+            <button type="button">+</button>
+          </p>
+          <p>
+            <label for="number-child">Дети:</label>
+            <button type="button">-</button>
+            <input type="text" id="number-child" name="number-child" value="0">
+            <button type="button">+</button>
+          </p>
+          <button type="submit">Найти</button>
+        </form>
         <img src="img/map.jpg" alt="Гостиницы на карте Седоны расположены в каждом квартале" width="1200" height="593">
       </section>
     </main>
