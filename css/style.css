@@ -76,3 +76,13 @@ a {
   line-height: 21px;
 }
 
+.services-list {
+  color: ;
+  background-color: #f2f2f2;
+}
+
+.reason-1,
+.reason-2 {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
