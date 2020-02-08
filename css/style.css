@@ -41,3 +41,38 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
 }
+
+.slogan {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.subtitle-reasons-list {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.reasons-list,
+.services-list {
+  list-style: none;
+}
+
+.reasons-list h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.reasons-list p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.services-list h4 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
