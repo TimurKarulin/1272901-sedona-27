@@ -14,10 +14,10 @@
           <img src="img/logo.svg" alt="Город Седона" width="140" height="72">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li><a class="nav-link active">Информация</a></li>
+          <li><a class="nav-link" href="#">Фото и видео</a></li>
+          <li><a class="nav-link" href="#">Карта штата</a></li>
+          <li><a class="nav-link" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -79,7 +79,7 @@
       <section class="search-hotels">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="interested-question">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="text-select-date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button">Поиск гостиницы в Седоне</button>
         <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="POST">
           <p>
@@ -106,20 +106,22 @@
           </p>
           <button type="submit">Найти</button>
         </form>
-        <img src="img/map.jpg" alt="Гостиницы на карте Седоны расположены в каждом квартале" width="1200" height="593">
+        <div class="map-background">
+          <img src="img/map.jpg" alt="Гостиницы на карте Седоны расположены в каждом квартале" width="1200" height="593">
+        </div>
       </section>
     </main>
     <footer>
       <p class="footer-contacts">
         #visitsedona<br>
-        Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a>
+        Тел: <a class="tel-number" href="tel:+74956660266">+7(495) 666-02-66</a>
       </p>
-      <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ютьюб</a></li>
+      <ul class="social-icons-list">
+        <li class="twitter-icon"><a href="#">Твиттер</a></li>
+        <li class="facebook-icon"><a href="#">Фейсбук</a></li>
+        <li class="youtube-icon"><a href="#">Ютьюб</a></li>
       </ul>
-      <p>
+      <p class="copyright">
         Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" alt="Логотип разработчика" width="115" height="41">

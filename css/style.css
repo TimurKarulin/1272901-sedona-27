@@ -22,17 +22,21 @@ a {
   background-color: #ffffff;
 }
 
-.site-navigation a {
+.nav-link {
   color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: #81b3d2;
 }
 
-.site-navigation a:active {
+.nav-link:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-link.active {
+  color: #766357;
 }
 
 .top-background {
@@ -118,10 +122,34 @@ a {
   line-height: 36px;
 }
 
+.text-select-date {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
 .search-hotels-form {
   display: none;
 }
 
-.footer-contacts {
-
+.map-background {
+  width: 1200px;
+  height: 593px;
+  background-color: #cbdda9;
 }
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.tel-number {
+  color: #000000;
+}
+
+.social-icons-list {
+  list-style: none;
+}
+
