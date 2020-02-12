@@ -71,18 +71,57 @@ a {
   color: #333333;
 }
 
+.services-list {
+  background-color: #f2f2f2;
+}
+
 .services-list h4 {
   font-size: 21px;
   line-height: 21px;
-}
-
-.services-list {
-  color: ;
-  background-color: #f2f2f2;
+  color: #000000;
 }
 
 .reason-1,
 .reason-2 {
   color: #ffffff;
   background-color: #81b3d2;
+}
+
+.reason-1 p,
+.reason-2 p {
+  color: #ffffff;
+}
+
+.calm-city-background {
+  width: 800px;
+  height: 256px;
+  background-color: #a5b29f;
+}
+
+.services-list p {
+  color: #333333;
+}
+
+.residence::before {
+  content: "";
+  background-image: url("../img/icon-house.svg");
+}
+
+.devil-bridge-background {
+  width: 800px;
+  height: 256px;
+  background-color: #e4b19b;
+}
+
+.interested-question {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search-hotels-form {
+  display: none;
+}
+
+.footer-contacts {
+
 }
