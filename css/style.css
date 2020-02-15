@@ -96,25 +96,8 @@ a {
   color: #ffffff;
 }
 
-.calm-city-background {
-  width: 800px;
-  height: 256px;
-  background-color: #a5b29f;
-}
-
 .services-list p {
   color: #333333;
-}
-
-.residence::before {
-  content: "";
-  background-image: url("../img/icon-house.svg");
-}
-
-.devil-bridge-background {
-  width: 800px;
-  height: 256px;
-  background-color: #e4b19b;
 }
 
 .interested-question {
@@ -133,12 +116,6 @@ a {
   display: none;
 }
 
-.map-background {
-  width: 1200px;
-  height: 593px;
-  background-color: #cbdda9;
-}
-
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
@@ -153,3 +130,110 @@ a {
   list-style: none;
 }
 
+.copyright {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.background-form {
+  background-color: #e2eff8;
+  background-image: url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.desc-form {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.desc-form label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-found-hotels {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.text-sort-hotels {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-link {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-link:hover,
+.sort-link:focus {
+  color: #81b3d2;
+}
+
+.sort-link:active {
+  color: #000000;
+}
+
+.sort-link.active {
+  color: #81b3d2;
+}
+
+.sort-list-right {
+  list-style: none;
+}
+
+.found-hotels-list {
+  list-style: none;
+}
+
+.title-hotels {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.title-hotels:hover,
+.title-hotels:focus {
+  color: #81b3d2;
+}
+
+.title-hotels:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotels-price {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.rating-scale {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.buttons-found-list {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.buttons-found-list:active {
+  color: rgba(255, 255, 255, 0.3);
+}

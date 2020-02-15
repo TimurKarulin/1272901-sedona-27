@@ -2,124 +2,129 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Главная страница города Седона</title>
+    <title>Выбор гостиницы в городе Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" alt="Город Седона" width="140" height="72">
         </a>
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+        <ul class="site-navigation">
+          <li><a class="nav-link" href="index.html">Информация</a></li>
+          <li><a class="nav-link" href="#">Фото и видео</a></li>
+          <li><a class="nav-link" href="#">Карта штата</a></li>
+          <li><a class="nav-link active">Гостиницы</a></li>
         </ul>
       </nav>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <p>
-            Инфраструктура:<br>
-            <input type="checkbox" name="pool" id="pool">
-            <label for="pool">Бассейн</label><br>
-            <input type="checkbox" name="parking" id="parking">
-            <label for="parking">Парковка</label><br>
-            <input type="checkbox" name="apartments" id="apartments">
-            <label for="apartments">Апартаменты</label>
-          </p>
-          <p>
-            Тип жилья:<br>
-            <input type="checkbox" name="hotel" id="hotel">
-            <label for="hotel">Гостиница</label><br>
-            <input type="checkbox" name="motel" id="motel">
-            <label for="motel">Парковка</label><br>
-            <input type="checkbox" name="wi-fi" id="wi-fi">
-            <label for="wi-fi">wi-fi</label>
-          </p>
-          <p>
-            Стоимость в сутки (р):<br>
-            <input type="text" name="min-value" placeholder="от 0">
-            <input type="text" name="max-value" placeholder="до 3000"><br>
-            <button type="button">min</button>
-            <button type="button">max</button><br>
-            <button type="submit">Показать</button>
-          </p>
-        </form>
+        <div class="background-form">
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <p class="desc-form infrastructure">
+              Инфраструктура:<br>
+              <input type="checkbox" name="pool" id="pool">
+              <label for="pool">Бассейн</label><br>
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label><br>
+              <input type="checkbox" name="apartments" id="apartments">
+              <label for="apartments">Апартаменты</label>
+            </p>
+            <p class="desc-form house-type">
+              Тип жилья:<br>
+              <input type="checkbox" name="hotel" id="hotel">
+              <label for="hotel">Гостиница</label><br>
+              <input type="checkbox" name="motel" id="motel">
+              <label for="motel">Парковка</label><br>
+              <input type="checkbox" name="wi-fi" id="wi-fi">
+              <label for="wi-fi">wi-fi</label>
+            </p>
+            <p class="desc-form cost">
+              Стоимость в сутки (р):<br>
+              <input type="text" name="min-value" placeholder="от 0">
+              <input type="text" name="max-value" placeholder="до 3000"><br>
+              <button type="button">min</button>
+              <button type="button">max</button><br>
+              <button type="submit">Показать</button>
+            </p>
+          </form>
+        </div>
         <div>
-          <p>Найдено: 3</p>
-          <p>Сортировка:</p>
-          <ul>
-            <li><a>По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
+          <p class="text-found-hotels">Найдено: 3</p>
+          <p class="text-sort-hotels">Сортировка:</p>
+          <ul class="sort-list">
+            <li><a class="sort-link active">По цене</a></li>
+            <li><a class="sort-link" href="#">По типу</a></li>
+            <li><a class="sort-link" href="#">По рейтингу</a></li>
           </ul>
-          <ul>
-            <li><a href="#">По возрастанию</a></li>
-            <li><a>По убыванию</a></li>
+          <ul class="sort-list-right">
+            <li><a class="arrows arrow-up" href="#">По возрастанию</a></li>
+            <li><a class="arrows arrow-down">По убыванию</a></li>
           </ul>
         </div>
     </header>
     <main>
       <h1 class="visually-hidden">Подбор гостиницы</h1>
-        <ul>
+        <ul class="found-hotels-list">
           <li>
-            <a href="#">
+            <a class="thumb-hotels thumb-hotel-1" href="#">
               <img src="img/hotel-1.jpg" alt="Amara resort & spa" width="135" height="90">
             </a>
             <h2>
-              <a href="#">
+              <a class="title-hotels title-hotel-1" href="#">
                 Amara resort & spa
               </a>
             </h2>
-            <div class="rating rating-hotel-4"></div>
-            <p>Гостиница от 4000 Р.</p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-            <p>Рейтинг: 8,5</p>
+            <div class="rating rating-star-4"></div>
+            <p class="hotels-price price-hotel-1">Гостиница от 4000 Р.</p>
+            <a class="buttons-found-list button-more" href="#">Подробнее</a>
+            <a class="buttons-found-list buttons-booking" href="#">Забронировать</a>
+            <p class="rating-scale">Рейтинг: 8,5</p>
           </li>
           <li>
-            <a href="#">
+            <a class="thumb-hotels thumb-hotel-2" href="#">
               <img src="img/hotel-2.jpg" alt="Desert quail inn" width="135" height="90">
             </a>
             <h2>
-              <a href="#">
+              <a class="title-hotels title-hotel-2" href="#">
                 Desert quail inn
               </a>
             </h2>
-            <div class="rating rating-hotel-3"></div>
-            <p>Мотель от 3000 Р.</p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-            <p>Рейтинг: 8,9</p>
+            <div class="rating rating-star-3"></div>
+            <p class="hotels-price price-hotel-2">Мотель от 3000 Р.</p>
+            <a class="buttons-found-list button-more" href="#">Подробнее</a>
+            <a class="buttons-found-list buttons-booking" href="#">Забронировать</a>
+            <p class="rating-scale">Рейтинг: 8,9</p>
           </li>
           <li>
-            <a href="#">
+            <a class="thumb-hotels thumb-hotel-3" href="#">
               <img src="img/hotel-3.jpg" alt="Villas at poco diablo" width="135" height="90">
             </a>
             <h2>
-              <a href="#">
+              <a class="title-hotels title-hotel-3" href="#">
                 Villas at poco diablo
               </a>
             </h2>
-            <div class="rating rating-hotel-2"></div>
-            <p>Апартаменты от 2000 Р.</p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-            <p>Рейтинг: 9,2</p>
+            <div class="rating rating-star-2"></div>
+            <p class="hotels-price price-hotel-3">Апартаменты от 2000 Р.</p>
+            <a class="buttons-found-list button-more" href="#">Подробнее</a>
+            <a class="buttons-found-list buttons-booking" href="#">Забронировать</a>
+            <p class="rating-scale">Рейтинг: 9,2</p>
           </li>
         </ul>
     </main>
-    <footer>
-      <p>
+    <footer class="main-footer">
+      <p class="footer-contacts">
         #visitsedona<br>
-        Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a>
+        Тел: <a class="tel-number" href="tel:+74956660266">+7(495) 666-02-66</a>
       </p>
-      <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ютьюб</a></li>
+      <ul class="social-icons-list">
+        <li><a class="twitter-icon" href="#">Твиттер</a></li>
+        <li><a class="facebook-icon" href="#">Фейсбук</a></li>
+        <li><a class="youtube-icon" href="#">Ютьюб</a></li>
       </ul>
-      <p>
+      <p class="copyright">
         Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" alt="Логотип разработчика" width="115" height="41">
