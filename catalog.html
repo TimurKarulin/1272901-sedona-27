@@ -20,51 +20,51 @@
           <li><a class="nav-link active">Гостиницы</a></li>
         </ul>
       </nav>
-        <div class="background-form">
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <p class="desc-form infrastructure">
-              Инфраструктура:
-              <input type="checkbox" name="pool" id="pool" checked>
-              <label for="pool">Бассейн</label>
-              <input type="checkbox" name="parking" id="parking">
-              <label for="parking">Парковка</label>
-              <input type="checkbox" name="apartments" id="apartments">
-              <label for="apartments">Апартаменты</label>
-            </p>
-            <p class="desc-form house-type">
-              Тип жилья:
-              <input type="checkbox" name="hotel" id="hotel" checked>
-              <label for="hotel">Гостиница</label>
-              <input type="checkbox" name="motel" id="motel" checked>
-              <label for="motel">Парковка</label>
-              <input type="checkbox" name="wi-fi" id="wi-fi" checked>
-              <label for="wi-fi">wi-fi</label>
-            </p>
-            <p class="desc-form cost">
-              Стоимость в сутки (р):
-              <input type="text" name="min-value" placeholder="от 0">
-              <input type="text" name="max-value" placeholder="до 3000">
-              <button type="button">min</button>
-              <button type="button">max</button>
-              <button type="submit">Показать</button>
-            </p>
-          </form>
-        </div>
-        <div>
-          <p class="text-found-hotels">Найдено: 3</p>
-          <p class="text-sort-hotels">Сортировка:</p>
-          <ul class="sort-list">
-            <li><a class="sort-link active">По цене</a></li>
-            <li><a class="sort-link" href="#">По типу</a></li>
-            <li><a class="sort-link" href="#">По рейтингу</a></li>
-          </ul>
-          <ul class="sort-list-right">
-            <li><a class="arrows arrow-up" href="#">По возрастанию</a></li>
-            <li><a class="arrows arrow-down">По убыванию</a></li>
-          </ul>
-        </div>
     </header>
     <main>
+      <div class="background-form">
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <p class="desc-form infrastructure">
+            Инфраструктура:
+            <input type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="apartments" id="apartments">
+            <label for="apartments">Апартаменты</label>
+          </p>
+          <p class="desc-form house-type">
+            Тип жилья:
+            <input type="checkbox" name="hotel" id="hotel" checked>
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" name="motel" id="motel" checked>
+            <label for="motel">Парковка</label>
+            <input type="checkbox" name="wi-fi" id="wi-fi" checked>
+            <label for="wi-fi">wi-fi</label>
+          </p>
+          <p class="desc-form cost">
+            Стоимость в сутки (р):
+            <input type="text" name="min-value" placeholder="от 0">
+            <input type="text" name="max-value" placeholder="до 3000">
+            <button type="button">min</button>
+            <button type="button">max</button>
+            <button type="submit">Показать</button>
+          </p>
+        </form>
+      </div>
+      <div>
+        <p class="text-found-hotels">Найдено: 3</p>
+        <p class="text-sort-hotels">Сортировка:</p>
+        <ul class="sort-list">
+          <li><a class="sort-link active">По цене</a></li>
+          <li><a class="sort-link" href="#">По типу</a></li>
+          <li><a class="sort-link" href="#">По рейтингу</a></li>
+        </ul>
+        <ul class="sort-list-right">
+          <li><a class="arrows arrow-up" href="#">По возрастанию</a></li>
+          <li><a class="arrows arrow-down">По убыванию</a></li>
+        </ul>
+      </div>
       <h1 class="visually-hidden">Подбор гостиницы</h1>
         <ul class="found-hotels-list">
           <li>
