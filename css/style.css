@@ -20,10 +20,6 @@ a {
   background-color: #ffffff;
 }
 
-/* .nav-link {
-  color: #000000;
-} */
-
 .nav-link:hover,
 .nav-link:focus {
   color: #81b3d2;
