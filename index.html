@@ -15,14 +15,10 @@
             <img src="img/logo.svg" alt="Город Седона" width="140" height="72">
           </a>
           <ul class="site-navigation">
-            <div class="nav-part nav-left">
               <li><a class="nav-link active">Информация</a></li>
               <li><a class="nav-link" href="#">Фото и видео</a></li>
-            </div>
-            <div class="nav-part nav-right">
               <li><a class="nav-link" href="#">Карта штата</a></li>
               <li><a class="nav-link" href="catalog.html">Гостиницы</a></li>
-            </div>
           </ul>
         </nav>
       </header>
@@ -31,10 +27,12 @@
           <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону! Убийцу Гранд Каньёна!">
         </div>
         <section class="main-section">
-          <p class="slogan">Седона - небольшой городок в Аризоне,<br>
-            заслуживающий большего!
-          </p>
-          <h2 class="subtitle-reasons-list">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+          <div class="subtitles-content subtitles-reasons-container">
+            <p class="slogan">Седона - небольшой городок в Аризоне,<br>
+              заслуживающий большего!
+            </p>
+            <h2 class="subtitle-reasons-list">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+          </div>
           <ul class="reasons-list">
             <li class="reason-1">
                 <h3>Настоящий<br>
@@ -105,11 +103,13 @@
         </section>
         <section class="search-hotels">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <p class="interested-question">Заинтересовались?</p>
-          <p class="text-select-date">Укажите предполагаемые даты поездки,<br>
+          <div class="subtitles-content subtitles-map">
+            <p class="interested-question">Заинтересовались?</p>
+            <p class="text-select-date">Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
-          </p>
-          <button type="button">Поиск гостиницы в Седоне</button>
+            </p>
+            <button type="button">Поиск гостиницы в Седоне</button>
+          </div>
           <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="POST">
             <p>
               <label for="date-in">Дата заезда:</label>

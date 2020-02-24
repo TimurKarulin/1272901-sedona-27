@@ -14,7 +14,19 @@ a {
   color: #000000;
 }
 
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-transform: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
 .main-wrapper {
+  position: relative;
   width: 1200px;
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
@@ -23,18 +35,23 @@ a {
 
 .main-header {
   min-height: 56px;
-  width: auto;
 }
 
 .main-navigation {
-  display: flex;
-  width: auto;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 530px;
 }
 
 .site-navigation {
-  width: auto;
   display: flex;
-  justify-content: space-between;
   line-height: 26px;
   list-style: none;
   background-color: #ffffff;
@@ -42,11 +59,12 @@ a {
   padding: 0;
 }
 
-.nav-part {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 340px;
+.site-navigation li {
+  min-width: 240px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: auto;
 }
 
 .nav-link:hover,
@@ -63,16 +81,65 @@ a {
 }
 
 .top-background {
+  min-height: 510px;
   background-color: #e2eff8;
   background-image:
     url("../img/background-decoration.svg"),  
     url("../img/background-photo.jpg");
   background-position:
     bottom center,
-    top center;
+    center -55px;
   background-repeat:
     no-repeat,
     no-repeat;
+    padding-top: 77px;
+}
+
+.top-background img {
+  display: block;
+  margin: 0 auto;
+}
+
+.subtitles-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.interested-question {
+  margin-bottom: 15px;
+}
+
+.text-select-date {
+  margin-bottom: 54px;
+}
+
+.subtitles-reasons-container {
+  min-height: 216px;
+  justify-content: center;
+}
+
+.subtitles-map {
+  min-height: 291px;
+  justify-content: flex-end;
+}
+
+.subtitles-map button {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+  box-shadow: 0 10px 20px 0 rgba(0, 1, 1, 0.25);
+}
+
+.subtitles-map button:hover,
+.subtitles-map button:focus {
+  background-color: #604e43;
+}
+
+.subtitles-map button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .slogan {
@@ -145,6 +212,17 @@ a {
   display: none;
 }
 
+.main-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  min-height: 120px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
@@ -156,6 +234,7 @@ a {
 }
 
 .social-icons-list {
+  display: flex;
   list-style: none;
 }
 
@@ -167,10 +246,13 @@ a {
 }
 
 .background-form {
+  min-height: 177px;
   background-color: #e2eff8;
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center -50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .desc-form {
@@ -225,6 +307,8 @@ a {
 
 .found-hotels-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .title-hotels {
@@ -265,4 +349,79 @@ a {
 
 .buttons-found-list:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.item-hotels {
+  display: flex;
+}
+
+.button-blue {
+  display: inline-block;
+  width: 110px;
+  height: 21px;
+  background-color: #81b3d2;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-brown {
+  display: inline-block;
+  width: 142px;
+  height: 21px;
+  background-color: #766357;
+  box-shadow: 0 10px 20px 0 rgba(0, 1, 1, 0.25);
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #604e43;
+}
+
+.button-brown:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.wrap-miniature {
+  margin-left: 72px;
+  margin-right: 30px;
+  outline: 2px solid red;
+}
+
+.wrap-desc {
+  outline: 2px solid green;
+}
+
+.wrap-rating {
+  outline: 2px solid yellow;
+}
+
+.container-left {
+  outline: 2px solid blue;
+}
+
+.container-right {
+  outline: 2px solid brown;
+}
+
+.container-hotels {
+  display: flex;
+}
+
+.wrap-desc h2 {
+  margin: 0;
 }
