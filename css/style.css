@@ -119,32 +119,23 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-.subtitles-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.interested-question {
-  margin-bottom: 15px;
-}
-
 .text-select-date {
   margin-bottom: 54px;
 }
 
 .subtitles-reasons-container {
-  min-height: 216px;
-  justify-content: center;
+  min-height: 155px;
+  padding-top: 61px;
 }
 
 .subtitles-map {
-  min-height: 291px;
-  justify-content: flex-end;
+  min-height: 233px;
+  padding-top: 58px;
 }
 
 .subtitles-map button {
+  display: block;
+  margin: 0 auto;
   width: 568px;
   height: 86px;
   background-color: #766357;
@@ -164,6 +155,8 @@ input[type="radio"].visually-hidden {
 .slogan {
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
+  margin-bottom: 38px;
 }
 
 .subtitle-reasons-list {
@@ -171,6 +164,8 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+  margin: 0;
+  text-align: center;
 }
 
 .reasons-list,
@@ -238,6 +233,9 @@ div.calm-city-background img {
 .interested-question {
   font-size: 30px;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .text-select-date {
@@ -245,6 +243,9 @@ div.calm-city-background img {
   line-height: 24px;
   font-weight: 400;
   color: #333333;
+  margin: 0;
+  margin-bottom: 43px;
+  text-align: center;
 }
 
 .search-hotels-form {
