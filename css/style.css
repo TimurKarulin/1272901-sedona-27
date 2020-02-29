@@ -65,7 +65,8 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
   position: absolute;
   top: 0;
-  left: 530px;
+  left: 50%;
+  margin-left: -70px;
 }
 
 .site-navigation {
@@ -78,7 +79,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li {
-  min-width: 240px;
+  width: 240px;
 }
 
 .site-navigation li:nth-child(2) {
