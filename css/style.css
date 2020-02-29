@@ -25,6 +25,24 @@ button {
   color: #ffffff;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-wrapper {
   position: relative;
   width: 1200px;
@@ -157,6 +175,8 @@ button {
 .reasons-list,
 .services-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .reasons-list h3 {
@@ -172,7 +192,12 @@ button {
 }
 
 .services-list {
+  display: flex;
   background-color: #f2f2f2;
+}
+
+.item-service {
+  width: 400px;
 }
 
 .services-list h4 {
@@ -181,15 +206,28 @@ button {
   color: #000000;
 }
 
-.reason-1,
-.reason-2 {
+.wrap-reason-title {
+  width: 400px;
   color: #ffffff;
   background-color: #81b3d2;
+}
+
+div.calm-city-background img {
+  display: block;
+}
+
+.wrap-reason-title h3, p {
+  margin: 0;
 }
 
 .reason-1 p,
 .reason-2 p {
   color: #ffffff;
+}
+
+.reason-1 {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services-list p {
@@ -255,6 +293,11 @@ button {
   padding-bottom: 20px;
 }
 
+.content-center {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
 .desc-form {
   font-size: 16px;
   line-height: 21px;
@@ -279,6 +322,13 @@ button {
 
 .sort-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-list-right {
+  margin: 0;
+  padding: 0;
 }
 
 .sort-link {
