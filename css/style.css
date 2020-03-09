@@ -175,9 +175,16 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
 .reasons-list h3 {
   font-size: 21px;
   line-height: 21px;
+  margin: 0;
 }
 
 .reasons-list p {
@@ -185,21 +192,41 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  margin: 0;
 }
 
 .services-list {
+  min-height: 330px;
   display: flex;
+  flex-wrap: wrap;
   background-color: #f2f2f2;
 }
 
-.item-service {
+.item-service,
+.reason-item {
   width: 400px;
+}
+
+.reason-item {
+  background-color: #eeeeee;
 }
 
 .services-list h4 {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+  text-align: center;
+  margin: 0;
+}
+
+.reason {
+  min-height: 211px;
+  padding-top: 45px;
+}
+
+.reason h3,
+.reason p {
+  margin-bottom: 25px;
 }
 
 .wrap-reason-title {
@@ -212,8 +239,8 @@ div.calm-city-background img {
   display: block;
 }
 
-.wrap-reason-title h3, p {
-  margin: 0;
+div.devil-bridge-background img {
+  display: block;
 }
 
 .reason-1 p,
@@ -224,6 +251,11 @@ div.calm-city-background img {
 .reason-1 {
   display: flex;
   flex-wrap: wrap;
+}
+
+.reason-2 {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .services-list p {
@@ -307,9 +339,55 @@ div.calm-city-background img {
   padding-right: 72px;
 }
 
+.filter-form {
+  display: flex;
+}
+
 .desc-form {
   font-size: 16px;
   line-height: 21px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.infrastructure {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+}
+
+.house-type {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.price {
+  width: 314px;
+}
+
+.value-control {
+  display: inline-block;
+}
+
+.field-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  width: 150px;
+  height: 22px;
+  background-color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.field-price::placeholder {
   color: #ffffff;
 }
 
@@ -318,24 +396,38 @@ div.calm-city-background img {
   font-weight: 400;
 }
 
+.wrap-sort-list {
+  display: flex;
+  align-items: baseline;
+  height: 86px;
+}
+
 .text-found-hotels {
+  width: 135px;
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+  padding-top: 30px;
 }
 
 .text-sort-hotels {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  margin: 0;
 }
 
 .sort-list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-grow: 1;
 }
 
 .sort-list-right {
+  width: 110px;
+  display: flex;
   margin: 0;
   padding: 0;
 }

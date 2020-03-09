@@ -25,7 +25,7 @@
       <main>
         <div class="background-form">
           <div class="content-center">
-            <form action="https://echo.htmlacademy.ru" method="POST">
+            <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST">
               <p class="desc-form infrastructure">
                 Инфраструктура:
                 <input type="checkbox" name="pool" id="pool" checked>
@@ -44,29 +44,31 @@
                 <input type="checkbox" name="wi-fi" id="wi-fi" checked>
                 <label for="wi-fi">wi-fi</label>
               </p>
-              <p class="desc-form cost">
+              <p class="desc-form price">
                 Стоимость в сутки (р):
-                <input type="text" name="min-value" placeholder="от 0">
-                <input type="text" name="max-value" placeholder="до 3000">
-                <button type="button">min</button>
-                <button type="button">max</button>
+                <input class="field-price" type="text" name="min-value" placeholder="от 0">
+                <input class="field-price" type="text" name="max-value" placeholder="до 3000">
+                <button class="value-control" type="button">min</button>
+                <button class="value-control" type="button">max</button>
                 <button type="submit">Показать</button>
               </p>
             </form>
           </div>
         </div>
         <div class="content-center">
-          <p class="text-found-hotels">Найдено: 3</p>
-          <p class="text-sort-hotels">Сортировка:</p>
-          <ul class="sort-list">
-            <li><a class="sort-link active">По цене</a></li>
-            <li><a class="sort-link" href="#">По типу</a></li>
-            <li><a class="sort-link" href="#">По рейтингу</a></li>
-          </ul>
-          <ul class="sort-list-right">
-            <li><a class="arrows arrow-up" href="#">По возрастанию</a></li>
-            <li><a class="arrows arrow-down">По убыванию</a></li>
-          </ul>
+          <div class="wrap-sort-list">
+            <p class="text-found-hotels">Найдено: 3</p>
+            <p class="text-sort-hotels">Сортировка:</p>
+            <ul class="sort-list">
+              <li><a class="sort-link active">По цене</a></li>
+              <li><a class="sort-link" href="#">По типу</a></li>
+              <li><a class="sort-link" href="#">По рейтингу</a></li>
+            </ul>
+            <ul class="sort-list-right">
+              <li><a class="arrows arrow-up" href="#">По возрастанию</a></li>
+              <li><a class="arrows arrow-down">По убыванию</a></li>
+            </ul>
+          </div>
         </div>
         <h1 class="visually-hidden">Подбор гостиницы</h1>
           <ul class="found-hotels-list">
