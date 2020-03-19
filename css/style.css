@@ -203,7 +203,7 @@ input[type="radio"].visually-hidden {
   padding-top: 170px;
 }
 
-.house-title:before {
+.house-title::before {
   content: "";
   width: 75px;
   height: 75px;
@@ -215,7 +215,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.eat-title:before {
+.eat-title::before {
   content: "";
   width: 75px;
   height: 75px;
@@ -227,7 +227,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.souvenir-title:before {
+.souvenir-title::before {
   content: "";
   width: 75px;
   height: 75px;
@@ -270,8 +270,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.decor-line:before,
-.decor-line:after {
+.decor-line::before,
+.decor-line::after {
   content:"";
   display: inline-block;
   vertical-align: middle;
@@ -281,18 +281,18 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.decor-line:before {
+.decor-line::before {
   margin-left: -100%;
   left: -5px;
 }
 
-.decor-line:after {
+.decor-line::after {
   margin-right: -100%;
   right: -5px;
 }
 
-.black-decor-line:before,
-.black-decor-line:after {
+.black-decor-line::before,
+.black-decor-line::after {
   background-color: #000000;
 }
 
@@ -482,7 +482,18 @@ div.devil-bridge-background img {
 }
 
 .price {
+  position: relative;
   width: 314px;
+}
+
+.price::after {
+  position: absolute;
+  left: 150px;
+  top: 39px;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #ffffff;
 }
 
 .check-title {
@@ -524,6 +535,9 @@ div.devil-bridge-background img {
 
 .value-control {
   display: inline-block;
+  width: 10px;
+  height: 10px;
+  /* border-radius: ; */
 }
 
 .field-price {
@@ -540,6 +554,16 @@ div.devil-bridge-background img {
   background-color: rgba(0, 0, 0, 0);
   text-transform: uppercase;
   margin-top: 10px;
+  cursor: pointer;
+}
+
+.field-price:first-child {
+  border-right: none;
+}
+
+.field-price:nth-child(2) {
+  margin-left: -6px;
+  border-left: none;
 }
 
 .field-price::placeholder {
@@ -549,6 +573,11 @@ div.devil-bridge-background img {
 .desc-form label {
   font-size: 14px;
   font-weight: 400;
+}
+
+.scale {
+  height: 2px;
+
 }
 
 .wrap-sort-list {
