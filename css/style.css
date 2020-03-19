@@ -196,10 +196,51 @@ input[type="radio"].visually-hidden {
 }
 
 .services-list {
-  min-height: 330px;
+  min-height: 160px;
   display: flex;
   flex-wrap: wrap;
   background-color: #f2f2f2;
+  padding-top: 170px;
+}
+
+.house-title:before {
+  content: "";
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: 185px;
+  left: 162px;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.eat-title:before {
+  content: "";
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: 185px;
+  left: 163px;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.souvenir-title:before {
+  content: "";
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: 185px;
+  left: 168px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.item-service {
+  position: relative;
 }
 
 .item-service,
@@ -222,6 +263,37 @@ input[type="radio"].visually-hidden {
 .reason {
   min-height: 211px;
   padding-top: 45px;
+}
+
+.decor-line {
+  overflow: hidden;
+  text-align: center;
+}
+
+.decor-line:before,
+.decor-line:after {
+  content:"";
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  height: 1px;
+  width: 8px;
+  background-color: #ffffff;
+}
+
+.decor-line:before {
+  margin-left: -100%;
+  left: -5px;
+}
+
+.decor-line:after {
+  margin-right: -100%;
+  right: -5px;
+}
+
+.black-decor-line:before,
+.black-decor-line:after {
+  background-color: #000000;
 }
 
 .reason h3,
@@ -316,7 +388,10 @@ div.devil-bridge-background img {
 }
 
 .social-icons-list {
+  width: 150px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -325,6 +400,45 @@ div.devil-bridge-background img {
   line-height: 26px;
   font-weight: 400;
   color: #000000;
+}
+
+.logo-footer path {
+  fill: #231f20;
+}
+
+.logo-footer:hover path,
+.logo-footer:focus path {
+  fill: #81b3d2;
+}
+
+.logo-footer:active path {
+  fill: #bdbbbc;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social:hover,
+.social:focus {
+  background-color: #669ec0;
+}
+
+.social:active path {
+  background-color: #5496bd;
+  opacity: 0.3;
+}
+
+.logo-footer svg {
+  width: 115px;
+  height: 41px;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 .background-form {
@@ -347,6 +461,7 @@ div.devil-bridge-background img {
 }
 
 .desc-form {
+  position: relative;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
@@ -368,6 +483,43 @@ div.devil-bridge-background img {
 
 .price {
   width: 314px;
+}
+
+.check-title {
+  padding-left: 39px;
+  margin-bottom: 20px;
+}
+
+.check-title-marg {
+  margin-top: 20px;
+}
+
+.check-indicator {
+  position: absolute;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.check-indicator path,
+.check-indicator polygon {
+  fill: #ffffff;
+}
+
+.check-pool,
+.check-hotel {
+  top: 40px;
+}
+
+.check-parking,
+.check-motel {
+  top: 80px;
+}
+
+.check-apartments,
+.check-wi-fi {
+  top: 120px;
 }
 
 .value-control {
@@ -510,6 +662,9 @@ div.devil-bridge-background img {
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-top: 1px solid #f9f9f9;
+  border-bottom: 1px solid #f9f9f9;
+  margin-bottom: -1px;
 }
 
 .button-blue {
