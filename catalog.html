@@ -132,14 +132,19 @@
                 </span>
                 <label class="check-title" for="apartments">Апартаменты</label>
               </p>
-              <p class="desc-form price">
+              <div class="desc-form price">
                 Стоимость в сутки (р):
                 <input class="field-price" type="text" name="min-value" placeholder="от 0">
                 <input class="field-price" type="text" name="max-value" placeholder="до 3000">
-                <button class="value-control" type="button"><span class="visually-hidden">min</span></button>
-                <button class="value-control" type="button"><span class="visually-hidden">max</span></button>
+                <div class="rage-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <button class="value-control" type="button"><span class="visually-hidden">min</span></button>
+                  <button class="value-control" type="button"><span class="visually-hidden">max</span></button>
+                </div>
                 <button type="submit">Показать</button>
-              </p>
+              </div>
             </form>
           </div>
         </div>

@@ -535,9 +535,10 @@ div.devil-bridge-background img {
 
 .value-control {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  /* border-radius: ; */
+  width: 30px;
+  height: 30px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
 }
 
 .field-price {
@@ -555,6 +556,7 @@ div.devil-bridge-background img {
   text-transform: uppercase;
   margin-top: 10px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .field-price:first-child {
@@ -577,7 +579,14 @@ div.devil-bridge-background img {
 
 .scale {
   height: 2px;
+  width: 302px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
+.bar {
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
 }
 
 .wrap-sort-list {
