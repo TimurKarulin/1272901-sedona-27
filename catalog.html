@@ -26,8 +26,8 @@
         <div class="background-form">
           <div class="content-center">
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST">
-              <p class="desc-form infrastructure">
-                Инфраструктура:
+              <fieldset class="desc-form infrastructure">
+                <legend>Инфраструктура:</legend>
                 <input class="visually-hidden" type="checkbox" name="pool" id="pool" checked>
                 <span class="check-indicator check-pool">
                   <?xml version="1.0" encoding="utf-8"?>
@@ -71,9 +71,9 @@
                   </svg>
                 </span>
                 <label class="check-title" for="wi-fi">wi-fi</label>
-              </p>
-              <p class="desc-form house-type">
-                Тип жилья:
+              </fieldset>
+              <fieldset class="desc-form house-type">
+                <legend>Тип жилья:</legend>
                 <input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
                 <span class="check-indicator check-hotel">
                   <?xml version="1.0" encoding="utf-8"?>
@@ -131,7 +131,7 @@
                   </svg>
                 </span>
                 <label class="check-title" for="apartments">Апартаменты</label>
-              </p>
+              </fieldset>
               <div class="desc-form price">
                 Стоимость в сутки (р):
                 <input class="field-price" type="text" name="min-value" placeholder="от 0">

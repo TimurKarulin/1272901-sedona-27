@@ -466,6 +466,8 @@ div.devil-bridge-background img {
   line-height: 21px;
   color: #ffffff;
   margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .infrastructure {
