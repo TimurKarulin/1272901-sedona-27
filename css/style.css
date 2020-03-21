@@ -452,8 +452,8 @@ div.devil-bridge-background img {
 }
 
 .content-center {
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .filter-form {
@@ -461,9 +461,9 @@ div.devil-bridge-background img {
 }
 
 .desc-form {
-  position: relative;
   font-size: 16px;
   line-height: 21px;
+  position: relative;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -484,14 +484,13 @@ div.devil-bridge-background img {
 }
 
 .price {
-  position: relative;
   width: 314px;
 }
 
-.price::after {
+.fields-price::after {
   position: absolute;
-  left: 150px;
-  top: 39px;
+  left: 50%;
+  top: 6px;
   content: "";
   width: 2px;
   height: 20px;
@@ -535,43 +534,86 @@ div.devil-bridge-background img {
   top: 120px;
 }
 
-.value-control {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
+.title-price {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-.field-price {
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
+.fields-price {
+  position: relative;
+  font-size: 0;
+  height: 32px;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: center;
-  width: 150px;
-  height: 22px;
-  background-color: rgba(0, 0, 0, 0);
-  text-transform: uppercase;
-  margin-top: 10px;
-  cursor: pointer;
   margin-bottom: 20px;
 }
 
-.field-price:first-child {
-  border-right: none;
-}
+.field-price {
+  width: 145px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  vertical-align: middle;
+  padding: 5px;
+  text-align: center;
+  background: none;
+  border: none;
 
-.field-price:nth-child(2) {
-  margin-left: -6px;
-  border-left: none;
 }
 
 .field-price::placeholder {
   color: #ffffff;
+}
+
+.rage-controls {
+  position: relative;
+}
+
+.value-control {
+  position: absolute;
+  top: -9px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #cecece;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.value-control-max {
+  left: 80%;
+}
+
+.value-control:hover,
+.value-control:focus {
+  width: 22px;
+  height: 22px;
+  border: 9px solid #ffffff;
+}
+
+.show-button {
+  padding: 0;
+  display: block;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 133px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 21px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0);
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.show-button:hover,
+.show-button:focus {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .desc-form label {
@@ -581,8 +623,8 @@ div.devil-bridge-background img {
 
 .scale {
   height: 2px;
-  width: 302px;
   background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 32px;
 }
 
 .bar {
