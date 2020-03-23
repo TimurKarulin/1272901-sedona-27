@@ -118,6 +118,7 @@ input[type="radio"].visually-hidden {
 }
 
 .subtitles-map {
+  position: relative;
   min-height: 233px;
   padding-top: 58px;
 }
@@ -133,7 +134,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.subtitles-map button {
+.subtitles-map .button {
   display: block;
   margin: 0 auto;
   width: 568px;
@@ -352,10 +353,6 @@ div.devil-bridge-background img {
   text-align: center;
 }
 
-.search-hotels {
-  position: relative;
-}
-
 .search-hotels-form {
   position: absolute;
   top: 0;
@@ -442,13 +439,12 @@ div.devil-bridge-background img {
 }
 
 .background-form {
-  min-height: 177px;
+  height: 187px;
   background-color: #e2eff8;
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: center -50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
 }
 
 .content-center {
@@ -499,39 +495,27 @@ div.devil-bridge-background img {
 
 .check-title {
   padding-left: 39px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .check-title-marg {
   margin-top: 20px;
 }
 
-.check-indicator {
+.filter-checkbox + label::before {
+  content: "";
   position: absolute;
   left: 0;
-  width: 27px;
+  width: 23px;
   height: 23px;
+  margin-right: 20px;
   cursor: pointer;
+  background: url("../img/checkbox-off.svg") no-repeat;
 }
 
-.check-indicator path,
-.check-indicator polygon {
-  fill: #ffffff;
-}
-
-.check-pool,
-.check-hotel {
-  top: 40px;
-}
-
-.check-parking,
-.check-motel {
-  top: 80px;
-}
-
-.check-apartments,
-.check-wi-fi {
-  top: 120px;
+.filter-checkbox:checked + label::before {
+  width: 27px;
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 .title-price {
@@ -549,17 +533,26 @@ div.devil-bridge-background img {
   margin-bottom: 20px;
 }
 
+.fields-price label {
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.fields-price .field-price-min,
+.fields-price .field-price-max {
+  width: 90px;
+  padding-left: 60px;
+}
+
 .field-price {
-  width: 145px;
+  width: 50px;
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
-  vertical-align: middle;
-  padding: 5px;
-  text-align: center;
   background: none;
   border: none;
-
 }
 
 .field-price::placeholder {
