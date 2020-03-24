@@ -118,28 +118,32 @@
             </p>
             <button class="button" type="button">Поиск гостиницы в Седоне</button>
             <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="POST">
-              <p>
+              <div class="wrap-date">
                 <label for="date-in">Дата заезда:</label>
                 <input type="text" id="date-in" name="date-in" placeholder="дд.мм.гггг" required>
-                <button type="button">Выбрать дату заезда</button>
-              </p>
-              <p>
+                <button class="button-calendar" type="button">
+                  <span class="visually-hidden">Выбрать дату заезда</span>
+                </button>
+              </div>
+              <div class="wrap-date">
                 <label for="date-out">Дата выезда:</label>
                 <input type="text" id="date-out" name="date-out" placeholder="дд.мм.гггг" required>
-                <button type="button">Выбрать дату выезда</button>
-              </p>
-              <p>
+                <button class="button-calendar" type="button">
+                  <span class="visually-hidden">Выбрать дату выезда</span>
+                </button>
+              </div>
+              <div>
                 <label for="number-adult">Взрослые:</label>
                 <button type="button">-</button>
                 <input type="text" id="number-adult" name="number-adult" value="0" required>
                 <button type="button">+</button>
-              </p>
-              <p>
+              </div>
+              <div>
                 <label for="number-child">Дети:</label>
                 <button type="button">-</button>
                 <input type="text" id="number-child" name="number-child" value="0">
                 <button type="button">+</button>
-              </p>
+              </div>
               <button type="submit">Найти</button>
             </form>
           </div>
