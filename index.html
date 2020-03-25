@@ -119,32 +119,32 @@
             <button class="button" type="button">Поиск гостиницы в Седоне</button>
             <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="POST">
               <div class="wrap-date">
-                <label for="date-in">Дата заезда:</label>
-                <input type="text" id="date-in" name="date-in" placeholder="дд.мм.гггг" required>
+                <label class="date-in" for="date-in">Дата заезда:</label>
+                <input class="date-in-input" type="text" id="date-in" name="date-in" value="24 апреля 2017" required>
                 <button class="button-calendar" type="button">
                   <span class="visually-hidden">Выбрать дату заезда</span>
                 </button>
               </div>
               <div class="wrap-date">
-                <label for="date-out">Дата выезда:</label>
-                <input type="text" id="date-out" name="date-out" placeholder="дд.мм.гггг" required>
+                <label class="date-out" for="date-out">Дата выезда:</label>
+                <input type="text" id="date-out" name="date-out" value="4 июля 2017" required>
                 <button class="button-calendar" type="button">
                   <span class="visually-hidden">Выбрать дату выезда</span>
                 </button>
               </div>
-              <div>
-                <label for="number-adult">Взрослые:</label>
-                <button type="button">-</button>
-                <input type="text" id="number-adult" name="number-adult" value="0" required>
-                <button type="button">+</button>
+              <div class="wrap-number">
+                <label class="number-adult" for="number-adult">Взрослые:</label>
+                <button class="plus-minus-button minus-button" type="button">-</button>
+                <input class="number-people-input" type="text" id="number-adult" name="number-adult" value="0" required>
+                <button class="plus-minus-button plus-button" type="button">+</button>
               </div>
-              <div>
-                <label for="number-child">Дети:</label>
-                <button type="button">-</button>
-                <input type="text" id="number-child" name="number-child" value="0">
-                <button type="button">+</button>
+              <div class="wrap-number-child">
+                <label class="number-child" for="number-child">Дети:</label>
+                <button class="plus-minus-button minus-button" type="button">-</button>
+                <input class="number-people-input" type="text" id="number-child" name="number-child" value="0">
+                <button class="plus-minus-button plus-button" type="button">+</button>
               </div>
-              <button type="submit">Найти</button>
+              <button class="button-search" type="submit">Найти</button>
             </form>
           </div>
           <div class="map-background">

@@ -356,7 +356,7 @@ div.devil-bridge-background img {
 
 .search-hotels-form {
   position: absolute;
-  bottom: -300px;
+  bottom: -394px;
   left: 50%;
   margin-left: -284px;
   width: 458px;
@@ -366,11 +366,12 @@ div.devil-bridge-background img {
 }
 
 .search-hotels-form div {
-  margin: 0;
+  font-size: 0;
 }
 
 .search-hotels-form input[type="text"] {
-  width: 293px;
+  height: 26px;
+  width: 292px;
   padding: 0;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -384,23 +385,172 @@ div.devil-bridge-background img {
   text-transform: uppercase;
 }
 
+.search-hotels-form input.number-people-input[type="text"] {
+  width: 26px;
+  padding: 6px;
+  text-align: center;
+}
+
 .search-hotels-form label {
   line-height: 26px;
+  font-size: 14px;
+}
+
+.date-in {
+  margin-right: 24px;
+}
+
+.date-out {
   margin-right: 21px;
+}
+
+.search-hotels-form input:hover {
+  background-color: #ebebeb;
+}
+
+.search-hotels-form input:focus {
+  background-color: #ffffff;
+  outline: 2px solid #e5e5e5;
 }
 
 .wrap-date {
   position: relative;
+  margin-bottom: 29px;
 }
 
 .wrap-date .button-calendar {
   position: absolute;
+  top: 8px;
+  right: 10px;
   border: none;
   padding: 0;
   width: 21px;
   height: 22px;
   background: none;
   background-image: url("../img/calendar.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.wrap-date .button-calendar:hover,
+.wrap-date .button-calendar:focus {
+  background-image: url("../img/calendar-black.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+.wrap-date .button-calendar:active {
+  background-image: url("../img/calendar-blue.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.plus-minus-button {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  vertical-align: top;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.minus-button::after {
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  margin-left: -6px;
+}
+
+.minus-button:hover::after,
+.minus-button:focus::after {
+  background-color: #000000;
+}
+
+.minus-button:active::after {
+  background-color: #81b3d2;
+}
+
+.plus-button::before {
+  content: "";
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  margin-left: -6px;
+}
+
+.plus-button::after {
+  content: "";
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  margin-left: -6px;
+  transform: rotate(90deg);
+}
+
+.plus-button:hover::after,
+.plus-button:focus::after,
+.plus-button:hover::before,
+.plus-button:focus::before {
+  background-color: #000000;
+}
+
+.plus-button:active::after,
+.plus-button:active::before {
+  background-color: #81b3d2;
+}
+
+.wrap-number,
+.wrap-number-child {
+  display: inline-block;
+  font-size: 0;
+}
+
+.wrap-number-child {
+  margin-bottom: 54px;
+}
+
+.number-adult {
+  margin-right: 41px;
+}
+
+.number-child {
+  margin-left: 47px;
+  margin-right: 28px;
+}
+
+.button-search {
+  width: 458px;
+  height: 58px;
+  padding: 0;
+  border: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button-search:hover,
+.button-search:focus {
+  background-color: #669ec0;
+}
+
+.button-search:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer {
